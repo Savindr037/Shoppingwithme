@@ -1,0 +1,123 @@
+.show-SidebarCntnr {
+    min-height: calc(100vh - 70px);
+    width: 270px;
+    /* border: 1px solid red; */
+    background-color: silver;
+    background: linear-gradient(90deg, rgb(94, 94, 94), rgb(0, 68, 68), rgb(94, 94, 94), rgb(0, 68, 68), rgb(94, 94, 94) );
+    animation: movinggradient 40s ease infinite;
+    background-size: 200%;
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    top: 70px;
+    transition: 0.2s;
+    transition-timing-function: ease-in;
+    z-index: 3;
+}
+@keyframes movinggradient {
+    0% { background-position: 0% 25%; }
+
+    25% { background-position: 25% 50%; }
+
+    50% { background-position: 50% 25%; }
+
+    25% { background-position: 25% 0%; }
+
+    0% { background-position: 0% 25%; }
+}
+
+.hide-SidebarCntnr {
+    min-height: calc(100vh - 70px);
+    width: 0;
+    /* border: 1px solid red; */
+    background-color: silver;
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    /* left: -170px; */
+    top: 70px;
+    transition: 0.2s;
+    transition-timing-function: ease-in;
+    z-index: 3;
+}
+
+.sidebar {
+    height: calc(100vh - 70px);
+    width: 270px;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hamburgerCntnr {
+    padding: 1px 3px;
+    cursor: pointer;
+    border-radius: 2px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 4px;
+    top: 17.5px;
+    z-index: 1;
+}
+.hamburgerCntnr:hover {
+    background-color:rgb(0, 40, 40) ;
+}
+
+.hamburgerCntnr .hamburger-line {
+    height: 1.2px;
+    width: 32px;
+    margin: 5px 0;
+    color: white;
+    /* border: 1px solid blue; */
+    background-color: white;
+}
+
+.sidebar-header {
+    font-size: 30px;
+}
+
+.sidebar ul {
+    width: 100%;
+    margin-top: 15px;
+    /* border:  1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .list {
+    width: 99%;
+    margin: 3px 0;
+    /* border:  1px solid red; */
+    display: flex;
+}
+
+.sidebar .list .sidebar-item {
+    height: 40px;
+    width: 100%;
+    font-size: 19px;
+    /* font-weight: 100; */
+    color: black;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.sidebar-item span {
+    height: 100%;
+    width: 100%;
+    /* border:  1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-item span:hover {
+    color: white;
+    background-color: rgb(0, 20, 20);
+}

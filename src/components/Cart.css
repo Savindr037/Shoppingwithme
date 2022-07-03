@@ -1,0 +1,89 @@
+.cartPage {
+    width: 100%;
+    padding: 0 2.5vw;
+    padding-top: 8vh;
+    /* border: 1px solid red; */
+    /* background-color: gainsboro; */
+    display: flex;
+}
+
+.cartItemsCntnr {
+    width: 70vw;
+    margin-right: 3vw;
+    margin-bottom: 4vh;
+    border-radius: 1.5px;
+    /* border: 1px solid black; */
+    background-color: white;
+    box-shadow: 0px 0px 3px -2px black;
+}
+
+.cartItemsCntnr:hover {
+    transition: 0.6s;
+    box-shadow: 0px 0px 6.5px -2px black;
+}
+
+.cartHeadingCntnr {
+    width: 100%;
+    /* border: 1px solid red; */
+    border-bottom: 1px solid gray;
+}
+
+.shoppingCartHeading {
+    padding: 20px;
+    font-weight: 400;
+    font-size: 30px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+
+.cartItems {
+    width: 100%;
+    margin-top: 10px;
+    /* border: 1px solid blue; */
+}
+
+.proceedToBuyCntnr {
+    height: 40vh;
+    width: 30vw;
+    max-width: 370px;
+    padding: 4px 0;
+    border-radius: 1px;
+    background-color: white;
+    box-shadow: 0px 0px 3px -2px black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.proceedToBuyCntnr:hover {
+    transition: 0.6s;
+    box-shadow: 0px 0px 6.5px -2px black;
+}
+
+.subtotalCntnr {
+    height: 70%;
+    padding-top: 5vh;
+    font-size: 1.2rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.proceedToBuy-btn {
+    height: 37px;
+    width: 95%;
+    font-size: 20px;
+    border: 0;
+    border-radius: 3px;
+    /* margin-bottom: 3px; */
+    cursor: pointer;
+    background-color: #ffd814;
+    position: absolute;
+    bottom: 15px;
+}
+
+.proceedToBuy-btn:hover {
+    background-color: #f6c900;
+    border: 1px solid #deb100;
+}
