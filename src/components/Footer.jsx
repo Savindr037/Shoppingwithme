@@ -27,6 +27,11 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer-Item">
+            <div className="kp-IntouchCntnr">
+              <span className='side-of-kpIntouch'></span>
+              <span className="kp-Intouch">Keep In touch</span>
+              <span className='side-of-kpIntouch'></span>
+            </div>
             <div className="profileContainer">
               <figure className="profile-icon"><a href="https://www.linkedin.com/in/savindr-kumar/" target="blank" ><img src={linkedin_logo} alt="linkedin" className="linkedIn" /></a></figure>
 

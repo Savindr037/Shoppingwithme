@@ -3,7 +3,7 @@ footer {
     height: 100%;
     width: 100%;
     /* border: 1px solid yellow; */
-    background-color: rgb(0, 16, 16);
+    background-color: rgb(0, 25, 25);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,6 +29,26 @@ footer {
     text-decoration: 0.5px underline;
 }
 
+
+.kp-IntouchCntnr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side-of-kpIntouch {
+    height: 0.8px;
+    width: 17px;
+    margin-top: 1px;
+    color: black;
+    background-color: white;
+}
+.kp-Intouch {
+    padding: 0 2.5px;
+    font-size: 0.9rem;
+    font-weight: 200;
+    /* border: 1px solid red; */
+}
+
 .profileContainer {
     /* border: 1px solid yellow; */
     display: flex;
@@ -38,18 +58,19 @@ footer {
 
 .profile-icon { margin: 4px; }
 
-.linkedIn { height: 30px; width: 30px; }
-.instagram { height: 32px; width: 32px; }
-.whatsapp { height: 30px; width: 30px; }
+.linkedIn { height: 29px; width: 29px; }
+.instagram { height: 31px; width: 31px; }
+.whatsapp { height: 29px; width: 29px; }
 
 .copy-rightCntnr {
-    height: 40px;
+    height: 38px;
+    margin-bottom: 10px;
     padding-bottom: 3px;
     /* border: 1px solid red; */
-    background-color: rgb(0, 11, 11);
+    background-color: rgb(0, 15, 15);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.copy-rightCntnr span { font-size: 1rem; font-weight: 200; }
+.copy-rightCntnr span { font-size: 0.9rem; font-weight: 200; }

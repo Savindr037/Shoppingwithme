@@ -5,20 +5,25 @@ import { NavLink } from 'react-router-dom'
 const Sidebar = () => {
 
     const [sidebar, setSidebar] = useState(false);
-
     const showSidebar = () => {
         setSidebar(!sidebar);
     }
 
+    const [display, setDisplay] = useState(false);
+    const display_none = () => {
+        setDisplay(!display)
+    }
 
     return (
         <>
-            <div className="hamburgerCntnr" onClick={showSidebar} >
-                <span className="hamburger-line"></span>
-                <span className="hamburger-line"></span>
-                <span className="hamburger-line"></span>
+            <div className={sidebar ? "crossCntnr" : "hamburgerCntnr"} onClick={showSidebar} >
+                <span className="hamburger-line  cross-line line-1"></span>
+                <span className="hamburger-line  cross-line line-2"></span>
+                <span className="hamburger-line  cross-line line-3"></span>
             </div>
-            <div className={sidebar ? "show-SidebarCntnr" : "hide-SidebarCntnr"}>
+
+            <div className={sidebar ? "display-blur" : "display-none"} onClick={display_none}></div>
+            <div className={sidebar ? "show-SidebarCntnr" : "hide-SidebarCntnr" || display ? "hide-SidebarCntnr" : "show-SidebarCntnr"} >
                 <nav className='sidebar'>
                     <div className="sidebar-header">Header</div>
                     <hr style={{ width: "100%" }} />
@@ -40,6 +45,7 @@ const Sidebar = () => {
                         </li>
                     </ul>
                 </nav>
+
             </div>
         </>
     )

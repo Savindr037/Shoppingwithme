@@ -46,27 +46,27 @@
 }
 
 .add-to-Cart-n-buy-NowCntnr button {
-    height: 37px;
+    height: 36px;
     width: 100%;
-    font-size: 20px;
+    font-size: 17px;
     cursor: pointer;
     border: 0;
-    border-radius: 3px;
+    border-radius: 20px;
 }
 
 .addToCart-btn {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     background-color: #ffd814;
 }
 .addToCart-btn:hover {
     background-color: #f6c900;
-    border: 1px solid #edbe00;
+    border: 1px solid #deb100;
 }
 
 .buyNow-btn {
-    background-color: #fb641b;
+    background-color: #ff9203;
 }
 .buyNow-btn:hover {
-    background-color: #f75200;
-    border: 1px solid #e94e00;
+    background-color: #f08800;
+    border: 1px solid #e38100;
 }

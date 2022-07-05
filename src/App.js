@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Cart from './components/Cart';
 import SignIn from './components/SignIn';
-import Error from './components/Error';
+// import Error from './components/Error';
 import HomeContextProvider from './components/HomeContextProvider';
 import CartContextProvider from './components/CartContextProvider';
 
@@ -17,7 +17,7 @@ function App() {
               <Route exact path='/' element={<Home />} />
               <Route path='SignIn' element={<SignIn />} />
               <Route path='Cart' element={<Cart />} />
-              <Route path='*' element={<Error />} />
+              <Route path='*' element={<Home />} />
             </Routes>
           </BrowserRouter>
         </CartContextProvider>

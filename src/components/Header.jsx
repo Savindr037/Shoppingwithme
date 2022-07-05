@@ -15,7 +15,7 @@ function Header() {
         <>
             <header>
                 <nav className='navbar'>
-                    <a href="/" className='logoCntnr'><span className='logo'>Shopping</span><span className='logo-withme'>with me</span></a>
+                    <NavLink to="/" className='logoCntnr'><span className='logo'>Shopping</span><span className='logo-withme'>with me</span></NavLink>
                     <ul>
                         <li className='header-list'>
                             <NavLink to="/" className="navMenu">Home</NavLink>

@@ -1,49 +1,55 @@
-.show-SidebarCntnr {
-    min-height: calc(100vh - 70px);
-    width: 270px;
+.display-blur {
+    height: 100vh;
+    width: 100%;
     /* border: 1px solid red; */
-    background-color: silver;
-    background: linear-gradient(90deg, rgb(94, 94, 94), rgb(0, 68, 68), rgb(94, 94, 94), rgb(0, 68, 68), rgb(94, 94, 94) );
-    animation: movinggradient 40s ease infinite;
-    background-size: 200%;
+    background-color: rgba(0, 0, 0, 0.820);
+    /* background-color: rgba(0, 23, 23, 0.818); */
+    position: fixed;
+    right: 0;
+    z-index: 1;
+}
+.display-none {
+    height: 100vh;
+    /* border: 1px solid red; */
+    display: none;
+    position: fixed;
+    right: 0;
+}
+
+.show-SidebarCntnr {
+    height: 100vh;
+    width: 280px;
+    padding: 10px 0;
+    /* border: 1px solid red; */
+    background-image: linear-gradient(rgb(0, 24, 24) 8% , gray, rgb(0, 15, 15));
+    /* box-shadow: 280px 0 0 0 rgba(0, 20, 20, 0.552); */
     display: flex;
     justify-content: right;
     position: fixed;
-    top: 70px;
-    transition: 0.2s;
+    top: 0;
+    transition: 0.3s;
     transition-timing-function: ease-in;
     z-index: 3;
 }
-@keyframes movinggradient {
-    0% { background-position: 0% 25%; }
-
-    25% { background-position: 25% 50%; }
-
-    50% { background-position: 50% 25%; }
-
-    25% { background-position: 25% 0%; }
-
-    0% { background-position: 0% 25%; }
-}
 
 .hide-SidebarCntnr {
-    min-height: calc(100vh - 70px);
+    min-height: 100vh;
     width: 0;
+    padding: 10px 0;
     /* border: 1px solid red; */
-    background-color: silver;
+    background-image: linear-gradient(rgb(0, 23, 23), rgb(47, 47, 47), rgb(0, 15, 15));
     display: flex;
     justify-content: right;
     position: fixed;
-    /* left: -170px; */
-    top: 70px;
+    left: 0;
     transition: 0.2s;
     transition-timing-function: ease-in;
     z-index: 3;
 }
 
 .sidebar {
-    height: calc(100vh - 70px);
-    width: 270px;
+    height: 100%;
+    width: 280px;
     /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
@@ -51,7 +57,8 @@
 }
 
 .hamburgerCntnr {
-    padding: 1px 3px;
+    margin-left: 1px;
+    padding: 0 3px;
     cursor: pointer;
     border-radius: 2px;
     /* border: 1px solid red; */
@@ -60,25 +67,67 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    left: 4px;
-    top: 17.5px;
+    left: 5px;
+    top: 14.5px;
     z-index: 1;
-}
-.hamburgerCntnr:hover {
-    background-color:rgb(0, 40, 40) ;
 }
 
 .hamburgerCntnr .hamburger-line {
-    height: 1.2px;
-    width: 32px;
+    height: 1.4px;
+    width: 31px;
     margin: 5px 0;
-    color: white;
-    /* border: 1px solid blue; */
     background-color: white;
 }
 
+
+/* css for make cross icon */
+.crossCntnr {
+    padding: 3.5px 1px;
+    cursor: pointer;
+    border-radius: 2px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 285px;
+    top: 16px;
+    transition: 0.4s;
+    z-index: 5;
+}
+.crossCntnr .cross-line {
+    height: 1.5px;
+    width: 35px;
+    margin: 5px 0;
+    background-color: white;
+}
+.crossCntnr .line-1 {
+    transform: rotate(45deg);
+    transition: 0.2s;
+    position: relative;
+    top: 5px;
+}
+.crossCntnr .line-2 {
+    display: none;
+    transform: 0.3s;
+}
+
+.crossCntnr .line-3 {
+    transform: rotate(-45deg);
+    transition: 0.s;
+    position: relative;
+    top: -5px
+}
+
+
 .sidebar-header {
+    width: 100%;
+    margin: 8px 0;
     font-size: 30px;
+    text-align: center;
+    color: #EAEDED;
+    /* border: 1px solid blue; */
 }
 
 .sidebar ul {
@@ -89,10 +138,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
 
 .sidebar .list {
-    width: 99%;
+    width: 100%;
     margin: 3px 0;
     /* border:  1px solid red; */
     display: flex;
@@ -101,9 +151,9 @@
 .sidebar .list .sidebar-item {
     height: 40px;
     width: 100%;
-    font-size: 19px;
+    font-size: 18px;
     /* font-weight: 100; */
-    color: black;
+    color: #EAEDED;
     text-decoration: none;
     border-radius: 2px;
 }
@@ -118,6 +168,6 @@
 }
 
 .sidebar-item span:hover {
-    color: white;
-    background-color: rgb(0, 20, 20);
+    color: black;
+    background-color: #EAEDED;
 }

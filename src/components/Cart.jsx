@@ -13,13 +13,13 @@ const Cart = () => {
 
     return (
         <>
-            <div className="homePageCntnr">
+            <div className="over-all-PageCntnr">
                 <div className="headerCntnr">
                     <Header />
                 </div>
                 <Sidebar />
 
-                <div className="main-ItemCntnr">
+                <div className="main-contentCntnr">
                     <div className='cartPage'>
                         <div className="cartItemsCntnr">
                             <div className="cartHeadingCntnr">

@@ -14,12 +14,12 @@ function HomePage() {
 
     return (
         <>
-            <div className="homePageCntnr">
+            <div className="over-all-PageCntnr">
                 <div className="headerCntnr">
                     <Header />
                 </div>
                 <Sidebar />
-                <div className="main-ItemCntnr">
+                <div className="main-contentCntnr">
                     <div className="productsCntnr">
                         {
                             listItem.map((curItem) => {
