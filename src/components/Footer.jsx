@@ -12,18 +12,18 @@ const Footer = () => {
           <div className="footer-Item">
             <ul className="footer_listContainer">
               <li className="item">About</li>
+              <li className="item">Careers</li>
               <li className="item">Contact Us</li>
-              <li className="item">Lorem</li>
             </ul>
           </div>
           <div className="footer-Item">
             <ul className="footer_listContainer">
-              <li className="item">Lorem</li>
+              <li className="item">Account</li>
             </ul>
           </div>
           <div className="footer-Item">
             <ul className="footer_listContainer">
-              <li className="item">Lorem</li>
+              <li className="item">Orders</li>
             </ul>
           </div>
           <div className="footer-Item">
@@ -33,11 +33,11 @@ const Footer = () => {
               <span className='side-of-kpIntouch'></span>
             </div>
             <div className="profileContainer">
-              <figure className="profile-icon"><a href="https://www.linkedin.com/in/savindr-kumar/" target="blank" ><img src={linkedin_logo} alt="linkedin" className="linkedIn" /></a></figure>
+              <a href="https://www.linkedin.com/in/savindr-kumar/" className="profile-icon" target="blank" ><img src={linkedin_logo} alt="linkedin" className="linkedIn" /></a>
 
-              <figure className="profile-icon"><a href="https://www.instagram.com/savindr037/" target="blank" ><img src={instagram_logo} alt="instagram" className="instagram" /></a></figure>
+              <a href="https://www.instagram.com/savindr037/" className="profile-icon" target="blank" ><img src={instagram_logo} alt="instagram" className="instagram" /></a>
 
-              <figure className="profile-icon"><a href="https://wa.me/7071406586" target="blank" ><img src={whatsapp_logo} alt="whatsapp" className="whatsapp" /></a></figure>
+              <a href="https://wa.me/7071406586" className="profile-icon" target="blank" ><img src={whatsapp_logo} alt="whatsapp" className="whatsapp" /></a>
             </div>
           </div>
         </section>

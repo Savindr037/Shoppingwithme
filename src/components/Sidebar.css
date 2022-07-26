@@ -1,88 +1,86 @@
 .display-blur {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     /* border: 1px solid red; */
-    background-color: rgba(0, 0, 0, 0.820);
+    background-color: rgba(0, 0, 0, 0.538);
     /* background-color: rgba(0, 23, 23, 0.818); */
     position: fixed;
     right: 0;
     z-index: 1;
 }
+
 .display-none {
     height: 100vh;
     /* border: 1px solid red; */
     display: none;
-    position: fixed;
-    right: 0;
 }
 
 .show-SidebarCntnr {
     height: 100vh;
-    width: 280px;
-    padding: 10px 0;
+    width: 360px;
     /* border: 1px solid red; */
-    background-image: linear-gradient(rgb(0, 24, 24) 8% , gray, rgb(0, 15, 15));
-    /* box-shadow: 280px 0 0 0 rgba(0, 20, 20, 0.552); */
+    background-color: #dadfdf;
+    /* background-image: linear-gradient(rgb(0, 24, 24), gray, rgb(0, 15, 15)); */
     display: flex;
     justify-content: right;
     position: fixed;
     top: 0;
-    transition: 0.3s;
+    transition: 90ms;
     transition-timing-function: ease-in;
     z-index: 3;
 }
 
 .hide-SidebarCntnr {
-    min-height: 100vh;
+    height: 100vh;
     width: 0;
-    padding: 10px 0;
     /* border: 1px solid red; */
-    background-image: linear-gradient(rgb(0, 23, 23), rgb(47, 47, 47), rgb(0, 15, 15));
+    background-color: #EAEDED;
+    /* background-image: linear-gradient(rgb(0, 24, 24), gray, rgb(0, 15, 15)); */
     display: flex;
     justify-content: right;
     position: fixed;
     left: 0;
-    transition: 0.2s;
+    transition: 80ms;
     transition-timing-function: ease-in;
     z-index: 3;
 }
 
 .sidebar {
     height: 100%;
-    width: 280px;
+    width: 360px;
     /* border: 1px solid blue; */
+    /* background-color: #EAEDED; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .hamburgerCntnr {
-    margin-left: 1px;
     padding: 0 3px;
     cursor: pointer;
     border-radius: 2px;
-    /* border: 1px solid red; */
+    /* border: 0.5px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
     left: 5px;
-    top: 14.5px;
+    top: 16.5px;
     z-index: 1;
 }
 
 .hamburgerCntnr .hamburger-line {
     height: 1.4px;
-    width: 31px;
-    margin: 5px 0;
+    width: 25.5px;
+    margin: 3.7px 0;
     background-color: white;
 }
 
 
 /* css for make cross icon */
 .crossCntnr {
-    padding: 3.5px 1px;
+    height: 30px;
     cursor: pointer;
     border-radius: 2px;
     /* border: 1px solid red; */
@@ -91,48 +89,46 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    left: 285px;
-    top: 16px;
-    transition: 0.4s;
+    left: 375px;
+    top: 15px;
+    transition: 90ms;
     z-index: 5;
 }
+
 .crossCntnr .cross-line {
     height: 1.5px;
-    width: 35px;
-    margin: 5px 0;
+    width: 30px;
     background-color: white;
 }
+
 .crossCntnr .line-1 {
     transform: rotate(45deg);
-    transition: 0.2s;
-    position: relative;
-    top: 5px;
 }
+
 .crossCntnr .line-2 {
     display: none;
-    transform: 0.3s;
 }
 
 .crossCntnr .line-3 {
     transform: rotate(-45deg);
-    transition: 0.s;
-    position: relative;
-    top: -5px
+    position: absolute;
 }
 
 
 .sidebar-header {
+    min-height: 60px;
     width: 100%;
-    margin: 8px 0;
+    padding-top: 9.5px;
     font-size: 30px;
     text-align: center;
     color: #EAEDED;
-    /* border: 1px solid blue; */
+    /* border: 1px solid red; */
+    background-color: rgb(0, 25, 25);
+
 }
 
 .sidebar ul {
     width: 100%;
-    margin-top: 15px;
     /* border:  1px solid red; */
     display: flex;
     flex-direction: column;
@@ -142,9 +138,10 @@
 }
 
 .sidebar .list {
+    height: fit-content;
     width: 100%;
-    margin: 3px 0;
-    /* border:  1px solid red; */
+    margin: 10px 0;
+    /* border:  1px solid blue; */
     display: flex;
 }
 
@@ -156,18 +153,46 @@
     color: #EAEDED;
     text-decoration: none;
     border-radius: 2px;
+    /* border: 0.5px solid black; */
 }
 
 .sidebar-item span {
     height: 100%;
     width: 100%;
-    /* border:  1px solid red; */
+    color: black;
+    /* border:  0.5px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .sidebar-item span:hover {
-    color: black;
-    background-color: #EAEDED;
+    color: #EAEDED;
+    background-color: rgb(0, 25, 25);
+}
+
+
+
+
+@media (max-width: 575px) {
+    .show-SidebarCntnr {
+        width: 280px;
+    }
+    .crossCntnr {
+        left: 295px;
+    }
+}
+
+/* //////// css for mobile screen */
+@media (max-width: 395px) {
+    .hamburgerCntnr {
+        cursor: none;
+    }
+    .sidebar-item span {
+        cursor: none;
+    }
+    .crossCntnr {
+        cursor: none;
+        left: calc((100vw - 280px)/2 + 280px - 18.5px);
+    }
 }

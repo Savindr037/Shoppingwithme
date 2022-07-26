@@ -22,8 +22,8 @@ const Sidebar = () => {
                 <span className="hamburger-line  cross-line line-3"></span>
             </div>
 
-            <div className={sidebar ? "display-blur" : "display-none"} onClick={display_none}></div>
-            <div className={sidebar ? "show-SidebarCntnr" : "hide-SidebarCntnr" || display ? "hide-SidebarCntnr" : "show-SidebarCntnr"} >
+            <div className={sidebar ? "display-blur" : "display-none" } onClick={display_none}></div>
+            <div className={sidebar ? "show-SidebarCntnr" : "hide-SidebarCntnr" } >
                 <nav className='sidebar'>
                     <div className="sidebar-header">Header</div>
                     <hr style={{ width: "100%" }} />

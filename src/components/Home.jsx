@@ -1,20 +1,21 @@
-import React, { useContext } from 'react';
 import './Home.css';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import ProductCard from './ProductCard';
 import Footer from './Footer';
-import HomeContext from "./HomeContext";
-// import showSidebar from './Header'
 
-function HomePage() {
+import { useSelector } from "react-redux";
 
-    const { listItem } = useContext(HomeContext)
+function Home() {
+
+    const cartState = useSelector((state) => state.Reducer );
+    const ProductList = cartState.ProductList;
+    // console.log("cartState", cartState);
 
 
     return (
         <>
-            <div className="over-all-PageCntnr">
+            {/* <div className="over-all-PageCntnr"> */}
                 <div className="headerCntnr">
                     <Header />
                 </div>
@@ -22,8 +23,8 @@ function HomePage() {
                 <div className="main-contentCntnr">
                     <div className="productsCntnr">
                         {
-                            listItem.map((curItem) => {
-                                return <ProductCard key={curItem.id} {...curItem} />
+                            ProductList.map((curItem) => {
+                                return <ProductCard key={curItem.id} product = {curItem}/>
                             })
                         }
                     </div>
@@ -31,9 +32,9 @@ function HomePage() {
                 <div className="footerCntnr">
                     <Footer />
                 </div>
-            </div>
+            {/* </div> */}
         </>
     )
-}
+};
 
-export default HomePage
+export default Home
