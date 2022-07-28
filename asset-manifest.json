@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/shoppingwithme/static/css/main.f2406a62.css",
-    "main.js": "/shoppingwithme/static/js/main.f831cb64.js",
+    "main.css": "/shoppingwithme/static/css/main.dd9cd3c8.css",
+    "main.js": "/shoppingwithme/static/js/main.1706a61b.js",
     "static/media/Instagram-Logo.wine.svg": "/shoppingwithme/static/media/Instagram-Logo.wine.22bda4c250235f5d99c5c75e2537147e.svg",
     "static/media/WhatsApp.svg": "/shoppingwithme/static/media/WhatsApp.6181e5cecd1a682846ba3e623621a869.svg",
     "static/media/logo-linkedin.svg": "/shoppingwithme/static/media/logo-linkedin.c304a4148cde039a54532585f4d47b48.svg",
     "index.html": "/shoppingwithme/index.html",
     "static/media/search-icon25.svg": "/shoppingwithme/static/media/search-icon25.33c6fc0131187fc283391465efbdcc4a.svg",
-    "main.f2406a62.css.map": "/shoppingwithme/static/css/main.f2406a62.css.map",
-    "main.f831cb64.js.map": "/shoppingwithme/static/js/main.f831cb64.js.map"
+    "main.dd9cd3c8.css.map": "/shoppingwithme/static/css/main.dd9cd3c8.css.map",
+    "main.1706a61b.js.map": "/shoppingwithme/static/js/main.1706a61b.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2406a62.css",
-    "static/js/main.f831cb64.js"
+    "static/css/main.dd9cd3c8.css",
+    "static/js/main.1706a61b.js"
   ]
 }
